@@ -1,0 +1,11 @@
+{
+    "name": "gvargas/atusan-agents",
+    "description": "Soporte para Agentes IA de desarrollo",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gabriel Vargas"
+        }
+    ],
+    "minimum-stability": "stable"
+}
