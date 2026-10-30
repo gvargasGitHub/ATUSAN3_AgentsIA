@@ -509,7 +509,7 @@ La API principal incluye:
 | Método                         | Propósito                           |
 | ------------------------------ | ----------------------------------- |
 | `Response::instance()`         | Obtener instancia singleton         |
-| `Response::status($code)`      | Establecer código HTTP              |
+| `status($code)`                | Establecer código HTTP              |
 | `view($module)`                | Renderizar un módulo                |
 | `html($module)`                | Alias de view                       |
 | `add($key, $value)`            | Agregar datos a respuesta JSON      |
@@ -564,7 +564,7 @@ No serialices manualmente JSON mediante `json_encode()` si `Response` ya cubre e
 Utiliza:
 
 ```php
-Response::status(201);
+$this->response->status(201);
 ```
 
 antes de escribir la respuesta cuando necesites modificar el código HTTP.
@@ -572,7 +572,7 @@ antes de escribir la respuesta cuando necesites modificar el código HTTP.
 Ejemplo:
 
 ```php
-Response::status(201);
+$this->response->status(201);
 
 $this->response->json([
     'id' => $id
